@@ -1,0 +1,104 @@
+/* Style Settings */
+
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+:root {
+    /*--bgColor: rgb(0,0,0);*/
+    --accentColor: #E6E6E6;
+    --font: 'Karla', sans-serif;
+    --fontColor: #a0a0c0;
+}
+
+body {  
+  /* startComment Set alpha for to down image brightness.*/
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  /* Set blend-mode for gradation effect.*/
+  background-blend-mode: color-burn;
+  /* endComment */
+    
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+h1 {
+    color: var(--fontColor);
+    text-align:center;
+    font-size:64px;
+}
+
+#userPhoto {
+    width: 110px;
+    height: 110px;
+    display: block;
+    margin: 35px auto 20px;
+    border-radius: 50%;
+}
+
+#userName {
+    color: var(--fontColor);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+#links {
+    max-width: 675px;
+    width: auto;
+    display: block;
+    margin: 27px auto;
+}
+
+.link {
+    display: block;
+    color: var(--fontColor);
+    font-family: var(--font);
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 17px;
+    text-decoration: none;
+    font: bold !important;
+    font-size: 20px;
+    transition: all .25s cubic-bezier(.08, .59, .29, .99);
+    border: solid #131516 2px;
+    background-color: #131516;
+}
+
+.link:hover {
+    background-color: black !important;
+    color: var(--accentColor);
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#bgvideo{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background: url('poster.jpg') no-repeat;
+	background-size: cover;
+}
+
+.contents{
+	position: relative; /*must*/
+	z-index: 2; /*must*/
+}
+
+.wrapper{
+ height: 100vh;
+ background: linear-gradient(-45deg, rgba(3, 113, 123, 0.3),rgba(15, 65, 98, 0.5));
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}

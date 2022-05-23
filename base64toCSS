@@ -1,0 +1,4 @@
+1. upload and encode image by https://www.base64encode.org/
+2. execute cmd bellow.
+sed -e "s|^|body{background-image: url('data:image/jpg;base64,|g" encoded-20220521143318.txt > encoded-20220521143318_2.txt
+sed -e "s|$|');#background-image: url('./assets/deepSea.jpg');}|g" encoded-20220521143318_2.txt > background-image_base64.css
